@@ -28,10 +28,10 @@ Longitude,Latitude = T.trajet(x,y,z)
 
 sock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 try :
-    sock.bind(("192.168.1.45",31000))
+    sock.bind(("192.168.1.62",31000))
 except :
     sock.close()
-    sock.bind(("192.168.1.45",31000))
+    sock.bind(("192.168.1.62",31000))
 
 print("Serveur d'écoute sur le port : ",31000) # canal de sync
 sock.listen(5)
